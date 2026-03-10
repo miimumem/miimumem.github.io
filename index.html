@@ -1,32 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>The Sims4 Random legacy challenge tool</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>심즈4 랜덤 챌린지 생성기</title>
     <style>
+        /* 전체 배경과 폰트 설정 */
         body { 
             font-family: 'Malgun Gothic', sans-serif; 
             text-align: center; 
-            padding: 50px; 
-            line-height: 1.8;
+            background-color: #f0f9ff; /* 심즈 느낌의 연한 하늘색 */
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
-        /* 링크 스타일링 */
-        a {
-            font-weight: 800;       /* 아주 두껍게 설정 */
-            color: #ff5722;         /* 눈에 띄는 주황색 계열 */
-            text-decoration: none;  /* 처음엔 밑줄 없음 */
-            border-bottom: 2px solid #ff5722; /* 밑줄 대신 아래 테두리로 강조 */
-            padding-bottom: 2px;
+
+        /* 중앙 콘텐츠 영역 */
+        .container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
         }
-        a:hover {
-            background-color: #ff5722; /* 마우스 올리면 배경색 반전 */
+
+        h1 { color: #1a73e8; margin-bottom: 40px; }
+
+        /* 버튼 스타일 */
+        .btn-container {
+            display: flex;
+            gap: 20px; /* 버튼 사이 간격 */
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
             color: white;
+            text-decoration: none;
+            border-radius: 50px; /* 둥근 버튼 */
+            transition: transform 0.2s, background-color 0.2s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
+
+        /* 규칙 확인하기 버튼 (초록색 계열) */
+        .btn-rules { background-color: #4caf50; }
+        .btn-rules:hover { background-color: #45a049; transform: scale(1.05); }
+
+        /* 랜덤 생성기 버튼 (파란색 계열) */
+        .btn-random { background-color: #2196f3; }
+        .btn-random:hover { background-color: #1e88e5; transform: scale(1.05); }
+
+        /* 하단 문구 스타일 */
+        footer {
+            padding: 20px;
+            font-size: 12px;
+            color: #888;
+        }
+        /* 설명 문구 스타일 */
+.description {
+    margin-bottom: 30px; /* 버튼과의 간격 */
+    line-height: 1.6;
+    color: #555;
+    max-width: 600px; /* 너무 길게 퍼지지 않게 방지 */
+    word-break: keep-all; /* 한글 단어가 어색하게 끊기지 않게 함 */
+}
+
+.description p {
+    margin: 10px 0;
+}
     </style>
 </head>
 <body>
-    <h1>심즈4 랜덤 레거시 챌린지를 위한 랜덤 생성기</h1>
-    <p>Mod The Sims의 Tiger89님이 제작한 챌린지를 바탕으로 랜덤 생성기를 만들었습니다.</p>
-    <p>제 임의대로 바꾼 부분이 있으니 기존 규칙을 따르고 싶은 분들은 <a href="https://modthesims.info/showthread.php?p=4524239#post4524239" target="_blank"><strong>챌린지 원문</strong></a></a>을 확인해주세요! (새 창 열기)</p>
+
+   <body>
+
+    <div class="container">
+        <h1>💎 심즈4 랜덤 챌린지 생성기</h1>
+        
+        <div class="description">
+            <p>Mod The Sims의 <strong>Tiger89</strong>님이 제작한 챌린지를 바탕으로 랜덤 생성기를 만들었습니다.</p>
+            <p>제 임의대로 바꾼 부분이 있으니 기존 규칙을 따르고 싶은 분들은 
+               <a href="https://modthesims.info/showthread.php?p=4524239#post4524239" target="_blank"><strong>챌린지 원문</strong></a>을 확인해주세요!
+            </p>
+        </div>
+        <div class="btn-container">
+            <a href="rules.html" class="btn btn-rules">📖 규칙 확인하기</a>
+            <a href="generator.html" class="btn btn-random">🎲 랜덤 생성기</a>
+        </div>
+    </div>
+
+    <footer>
+        이 사이트는 제미나이와 함께 제작했으며, 모든 번역은 구글 번역의 도움을 받았습니다.
+    </footer>
+
+</body>
+
 </body>
 </html>
